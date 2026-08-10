@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.0-rc.2 — release-integrity repair
+
+### Release Integrity & Governance
+- Repaired Defect A: Enforced strict RFP endpoint invariant inequality (`DETERMINISTIC_SYNTHETIC_R1 != FUNDED_HIGH_FIDELITY_ENDPOINT`).
+- Repaired Defect B: Enhanced canonical reproduction verification with explicit `CANONICAL_EXACT_REPRODUCTION` and `CROSS_PLATFORM_NUMERICAL_REPRODUCTION` checks.
+- Authored formal `AUTHORS.md` establishing PI (Anna Paseva) and Collaborator (Ivan Pasev) roles.
+- Drafted `docs/REPOSITORY_STATUS.md` and `GOVERNANCE.md`.
+
 ## v1.0.0-rc.1 — 2026-08-10
 
 ### Scientific results

@@ -38,7 +38,7 @@ The Schmidt Sciences 2026 grant enables us to transition this validated measurem
 3. **Stage 3**: Introduction of at least two independently developed open-weight model families acting as agents.
 4. **Stage 4**: Integration of heterogeneous frontier APIs from multiple independent providers under a frozen configuration ledger, evaluating realistic dynamic rewiring.
 
-Across all stages, the final public v1.0.0 gate explicitly verifies that `DETERMINISTIC/SYNTHETIC R1 = FUNDED HIGH-FIDELITY ENDPOINT`.
+Across all stages, the final public v1.0.0 gate explicitly enforces the boundary: `DETERMINISTIC_SYNTHETIC_R1 != FUNDED_HIGH_FIDELITY_ENDPOINT`.
 
 ## 6. Falsification Logic
 The entire research program rests on falsifiable hypotheses. We will reject the hypothesis that a given network observable provides multi-agent safety value if:

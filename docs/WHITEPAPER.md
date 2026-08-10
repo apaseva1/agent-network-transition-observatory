@@ -86,7 +86,7 @@ The Schmidt Sciences 2026 grant enables a staged progression toward ecological f
 - **Stage 3**: At least two independently developed open-weight model families.
 - **Stage 4**: Heterogeneous frontier API populations from at least two independent providers, examining realistic dynamic rewiring.
 
-Across all stages, we explicitly verify the DETERMINISTIC/SYNTHETIC R1 = FUNDED HIGH-FIDELITY ENDPOINT mandate.
+Across all stages, we explicitly verify the `DETERMINISTIC_SYNTHETIC_R1 != FUNDED_HIGH_FIDELITY_ENDPOINT` mandate.
 
 ## 9. Conclusion
 
