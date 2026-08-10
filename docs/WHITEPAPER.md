@@ -2,7 +2,7 @@
 ## Cross-Fidelity Early Warning of Cascading Failure in Dynamic AI Agent Networks
 
 **Author:** Anna Paseva
-**Role:** Independent Researcher; Principal Network Analyst
+**Role:** Independent Researcher; Scientific Lead
 **Repository whitepaper version:** 1.0-draft
 **Date:** 2026-08
 
@@ -10,7 +10,7 @@
 
 As AI agents interact in increasingly dense networks, cascading failures—where one compromised or hallucinating agent triggers a chain reaction of failures—become a systemic risk. The central safety question is whether we can detect early-warning signals at the population level *before* the cascade becomes irrecoverable, and whether those signals transfer robustly across changes in network topology and agent capability. This whitepaper introduces the Agent Network Transition Observatory (ANTO), a deterministic research prototype designed to validate a pipeline for forecasting cascading failures using structural graph observables.
 
-The current R1 instrument evaluates 864 deterministic synthetic transfer runs across three graph families and three synthetic regimes (static, rewiring, heterogeneous). A key finding is that the transfer retention pipeline successfully isolates the incremental predictive value of population-level observables (like activity entropy and edge turnover) over a simple reactive baseline (current unsafe fraction). However, the current scientific boundary is strictly methodological: the results are deterministic synthetic metrics, not evidence that these signals predict cascades in real LLM-agent deployments. This paper outlines the higher-fidelity research question and the falsifiable roadmap toward real open-weight and frontier-agent populations.
+The current R1 instrument evaluates 864 deterministic synthetic transfer runs across three graph families and three synthetic regimes (static, rewiring, heterogeneous). A key finding is that the transfer retention pipeline operationally measures the incremental predictive contribution relative to the reactive baseline of population-level observables (like activity entropy and edge turnover) over a simple reactive baseline (current unsafe fraction). However, the current scientific boundary is strictly methodological: the results are deterministic synthetic metrics, not evidence that these signals predict cascades in real LLM-agent deployments. This paper outlines the higher-fidelity research question and the falsifiable roadmap toward real open-weight and frontier-agent populations.
 
 ## 1. Introduction
 
@@ -64,7 +64,7 @@ A logistic-regression predictor is trained on eligible `S0_static` runs and eval
 
 The R1 prototype establishes:
 - An operational synthetic pipeline for evaluating population-level early-warning signals.
-- A statistically robust transfer-retention metric that penalizes simple reactive advantages.
+- A operational transfer-evaluation metric that penalizes simple reactive advantages.
 - Deterministic reproducibility of the synthetic surface.
 
 R1 does **not** establish:
@@ -81,7 +81,7 @@ Reviewers must explicitly acknowledge the following bounds of the R1 instrument:
 
 ## 8. Higher-Fidelity Research Program
 
-The Schmidt Sciences 2026 grant enables a staged progression toward ecological fidelity:
+If funded under the submitted Schmidt Sciences 2026 proposal, the grant would enable a staged progression toward ecological fidelity:
 - **Stage 2**: Scripted/tool-using agents in static networks.
 - **Stage 3**: At least two independently developed open-weight model families.
 - **Stage 4**: Heterogeneous frontier API populations from at least two independent providers, examining realistic dynamic rewiring.

@@ -7,7 +7,7 @@ DETERMINISTIC_SYNTHETIC_R1 != FUNDED_HIGH_FIDELITY_ENDPOINT
 
 This repository enforces a strict distinction between current measurements and future validated endpoints:
 
-- **Current R1 (Observatory / CPAW)**: Provides synthetic/deterministic feasibility and measurement evidence. It establishes that structural pipeline boundaries can be instrumented.
+- **Current ANTO R1**: Provides synthetic/deterministic feasibility and measurement evidence. It establishes that structural pipeline boundaries can be instrumented.
 - **Not the Funded Endpoint**: The current R1 evidence is *not* the funded research endpoint. The current findings remain null/weak incremental regarding frontier risk.
 - **Funded Work Scope**: The funded trajectory tests external validity under higher-fidelity conditions involving:
   - Tool-using agents

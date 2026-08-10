@@ -32,7 +32,7 @@ It does **not** prove the system safe, nor does it validate frontier-agent safet
 The current R1 instrument is limited to a deterministic evaluator using hand-crafted synthetic runs, simplified topology assumptions, and boolean states. It does not evaluate missing traces, real agent behavior, semantic complexity, or the unstructured ambiguity inherent in real-world LLM-driven environments.
 
 ## 5. Funded Transition in Fidelity (The Roadmap)
-The Schmidt Sciences 2026 grant enables us to transition this validated measurement pipeline to progressively higher-fidelity ecosystems:
+If funded under the submitted Schmidt Sciences 2026 proposal, the program would enable us to transition this validated measurement pipeline to progressively higher-fidelity ecosystems:
 1. **Stage 1 (Current R1)**: Deterministic evaluation of synthetic networks.
 2. **Stage 2**: Scripted, tool-using agents replacing synthetic nodes.
 3. **Stage 3**: Introduction of at least two independently developed open-weight model families acting as agents.
