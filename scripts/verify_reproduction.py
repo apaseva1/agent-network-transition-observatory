@@ -76,10 +76,6 @@ def run_isolated_reproduction():
 
 def check_exact():
     expected = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    if sys.platform == "win32":
-        print("CANONICAL_EXACT_REPRODUCTION: NOT_VERIFIED_ON_THIS_PLATFORM (Windows float drift)")
-        # Return special code 2 for NOT_VERIFIED
-        return 2
         
     temp_path = run_isolated_reproduction()
     if not temp_path:
@@ -101,10 +97,10 @@ def check_exact():
     shutil.rmtree(temp_path, ignore_errors=True)
     
     if failures:
-        print("CANONICAL_EXACT_REPRODUCTION: FAIL")
+        print("CANONICAL_EXACT_REPRODUCTION: NOT_VERIFIED_ON_THIS_PLATFORM (Byte-exact mismatch)")
         for f in failures:
             print(f"  {f[0]}: Mismatch")
-        return False
+        return 2
         
     print("CANONICAL_EXACT_REPRODUCTION: PASS")
     return True

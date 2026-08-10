@@ -1,0 +1,11 @@
+{
+  "total_rows": 864,
+  "diff_count": 770,
+  "diff_fields": [
+    "algebraic_connectivity"
+  ],
+  "max_abs_diff": 2.1316282072803006e-14,
+  "max_rel_diff": 5.062424165741393e-14,
+  "differences_confined_to_algebraic_connectivity": true,
+  "string_integer_row_identity_differs": false
+}

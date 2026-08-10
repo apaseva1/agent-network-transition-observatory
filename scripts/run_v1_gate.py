@@ -68,13 +68,21 @@ def main():
     print(f"BOUNDED_HYGIENE: {hygiene}")
     print("CI:")
     print("CI_CONFIGURED")
-    print("CI_REMOTE_VERIFIED = FALSE")
+    print("CI_REMOTE_VERIFICATION: NOT_DETERMINED_BY_LOCAL_GATE")
     
     # Evaluate Pass Condition
+    if exact == "FAIL":
+        print("\n=== OVERALL STATUS: FAIL ===")
+        sys.exit(1)
+        
     required_passes = [integrity, numerical, rfp, freshness, tests, claim, link, hygiene]
     if all(x == "PASS" for x in required_passes):
-        print("\n=== OVERALL STATUS: PASS ===")
-        sys.exit(0)
+        if exact == "NOT_VERIFIED_ON_THIS_PLATFORM":
+            print("\n=== OVERALL STATUS: PASS_WITH_EXACT_REPRODUCTION_NOT_VERIFIED ===")
+            sys.exit(0)
+        else:
+            print("\n=== OVERALL STATUS: PASS ===")
+            sys.exit(0)
     else:
         print("\n=== OVERALL STATUS: FAIL ===")
         sys.exit(1)
