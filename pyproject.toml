@@ -1,0 +1,19 @@
+[project]
+name = "agent-network-transition-observatory"
+version = "0.3.0"
+description = "Synthetic instrumentation prototype for cross-regime cascade early warning"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Anna Paseva"}]
+dependencies = [
+  "networkx>=3.2,<4",
+  "numpy>=1.26,<3",
+  "scikit-learn>=1.5,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

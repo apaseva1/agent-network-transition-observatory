@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent Network Transition Observatory summary",
+  "type": "object",
+  "required": [
+    "prototype_status",
+    "scientific_hypothesis",
+    "feature_names",
+    "baseline_features",
+    "total_runs",
+    "forecast_eligible_runs",
+    "evaluation",
+    "absolute_uplift_auroc",
+    "transfer_retention_auroc",
+    "transfer_retention_min_source_uplift"
+  ],
+  "properties": {
+    "prototype_status": {
+      "const": "PIPELINE_VALIDATED"
+    },
+    "scientific_hypothesis": {
+      "const": "NOT_ESTABLISHED"
+    },
+    "total_runs": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "forecast_eligible_runs": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "feature_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "baseline_features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "required": [
+        "S0_static",
+        "S1_rewire",
+        "S2_heterogeneous"
+      ]
+    },
+    "absolute_uplift_auroc": {
+      "type": "object"
+    },
+    "transfer_retention_auroc": {
+      "type": "object"
+    },
+    "transfer_retention_min_source_uplift": {
+      "type": "number",
+      "minimum": 0
+    }
+  }
+}

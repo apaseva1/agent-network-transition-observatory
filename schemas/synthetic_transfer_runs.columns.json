@@ -1,0 +1,28 @@
+{
+  "file": "results/synthetic_transfer_runs.csv",
+  "columns": [
+    "run_id",
+    "regime",
+    "topology",
+    "n",
+    "seed_fraction",
+    "beta",
+    "seed",
+    "cascade",
+    "time_to_cascade",
+    "forecast_eligible",
+    "future_cascade",
+    "unsafe_fraction",
+    "propagation_rate",
+    "activity_entropy",
+    "avg_clustering",
+    "algebraic_connectivity",
+    "edge_turnover"
+  ],
+  "grouped_holdout_key": [
+    "topology",
+    "seed_fraction",
+    "beta"
+  ],
+  "row_semantics": "One deterministic synthetic simulation run."
+}

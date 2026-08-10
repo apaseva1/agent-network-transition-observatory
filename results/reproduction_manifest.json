@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "algorithm": "normalized-sha256-v1",
+  "canonical_python": "3.13",
+  "command": "python -m experiments.synthetic_transfer_sweep",
+  "files": {
+    "results/synthetic_transfer_runs.csv": {
+      "normalized_sha256": "be3fa8e9e45b41420b7e31056fca7a6115c5c015e7ab6a53cd59d97d7ed39182",
+      "bytes": 111007
+    },
+    "results/synthetic_transfer_summary.json": {
+      "normalized_sha256": "b211e5854d5935050a9abdaea5e8c036f67e523cd08141b174fc82d07a03602a",
+      "bytes": 2130
+    }
+  }
+}

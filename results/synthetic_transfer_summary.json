@@ -1,0 +1,79 @@
+{
+  "prototype_status": "PIPELINE_VALIDATED",
+  "scientific_hypothesis": "NOT_ESTABLISHED",
+  "note": "All regimes are synthetic instrumentation regimes; none are LLM/frontier-agent fidelity levels.",
+  "feature_names": [
+    "unsafe_fraction",
+    "propagation_rate",
+    "activity_entropy",
+    "avg_clustering",
+    "algebraic_connectivity",
+    "edge_turnover"
+  ],
+  "baseline_features": [
+    "unsafe_fraction"
+  ],
+  "total_runs": 864,
+  "forecast_eligible_runs": 853,
+  "evaluation": {
+    "S0_static": {
+      "full": {
+        "auroc": 0.829009433962264,
+        "auprc": 0.9498320784727168,
+        "brier": 0.14787884252062705,
+        "prevalence": 0.7681159420289855,
+        "n": 69
+      },
+      "baseline_unsafe_fraction": {
+        "auroc": 0.8838443396226415,
+        "auprc": 0.9616711777518377,
+        "brier": 0.11490646650620498,
+        "prevalence": 0.7681159420289855,
+        "n": 69
+      }
+    },
+    "S1_rewire": {
+      "full": {
+        "auroc": 0.9078823159219634,
+        "auprc": 0.9775329304089417,
+        "brier": 0.09906497784766109,
+        "prevalence": 0.8021201413427562,
+        "n": 283
+      },
+      "baseline_unsafe_fraction": {
+        "auroc": 0.9098489616110762,
+        "auprc": 0.9722379670498899,
+        "brier": 0.09762987814919134,
+        "prevalence": 0.8021201413427562,
+        "n": 283
+      }
+    },
+    "S2_heterogeneous": {
+      "full": {
+        "auroc": 0.862774779518231,
+        "auprc": 0.9506948379448699,
+        "brier": 0.12663553561003688,
+        "prevalence": 0.7508771929824561,
+        "n": 285
+      },
+      "baseline_unsafe_fraction": {
+        "auroc": 0.8587929445833882,
+        "auprc": 0.9426360457267953,
+        "brier": 0.12736694606828952,
+        "prevalence": 0.7508771929824561,
+        "n": 285
+      }
+    }
+  },
+  "absolute_uplift_auroc": {
+    "S0_static": -0.05483490566037752,
+    "S1_rewire": -0.001966645689112756,
+    "S2_heterogeneous": 0.003981834934842832
+  },
+  "transfer_retention_auroc": {
+    "S0_static": null,
+    "S1_rewire": null,
+    "S2_heterogeneous": null
+  },
+  "transfer_retention_min_source_uplift": 0.01
+}
