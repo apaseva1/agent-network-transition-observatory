@@ -1,0 +1,11 @@
+# Claim / Evidence Matrix
+
+| Claim ID | Candidate claim | Claim class | Code evidence | Test evidence | Result evidence | External citation | Status | Allowed wording | Prohibited overclaim |
+|---|---|---|---|---|---|---|---|---|---|
+| ANTO-C001 | Evaluates 864 deterministic synthetic transfer runs. | IMPLEMENTATION | `experiments/synthetic_transfer_sweep.py` | `tests/test_simulation.py` | `results/synthetic_transfer_summary.json` | None | SUPPORTED | "864 synthetic transfer runs" | "representative dataset" |
+| ANTO-C002 | Transfer retention isolates the predictive advantage over a simple reactive baseline. | DETERMINISTIC_RESULT | `observatory/evaluation.py` | `tests/test_transfer.py` | `results/synthetic_transfer_summary.json` | None | SUPPORTED | "isolates predictive advantage over baseline" | "proves causal superiority" |
+| ANTO-C003 | Leakage-resistant holdout uses topology × seed_fraction × propagation_parameter grouping. | IMPLEMENTATION | `observatory/evaluation.py` | `tests/test_transfer.py` | `results/synthetic_transfer_summary.json` | None | SUPPORTED | "hardened source holdout grouping" | "prevents all possible leakage" |
+| ANTO-C004 | Activity entropy and edge-turnover provide predictive signal within R1. | DETERMINISTIC_RESULT | `observatory/observables.py` | `tests/test_observables.py` | `results/synthetic_transfer_summary.json` | None | SUPPORTED | "provide predictive signal within R1" | "reliably predicts real-world cascades" |
+| ANTO-C005 | The R1 pipeline is statistically deterministic. | IMPLEMENTATION | `experiments/synthetic_transfer_sweep.py` | `tests/test_simulation.py` | `results/synthetic_transfer_summary.json` | None | SUPPORTED | "deterministic statistical pipeline" | "LLM evaluation" |
+| ANTO-C006 | R1 does not demonstrate LLM/frontier-agent safety benefit. | LIMITATION | `README.md` | None | None | None | SUPPORTED | "does not establish frontier-agent validity" | "validates frontier agent safety" |
+| ANTO-C007 | Higher-fidelity evaluation is a future falsifiable program. | FUTURE_HYPOTHESIS | `docs/WHITEPAPER.md` | None | None | Schmidt Sciences 2026 Proposal | FUTURE_HYPOTHESIS | "planned higher-fidelity method" | "currently replaces deterministic evaluator" |
